@@ -1,0 +1,104 @@
+#Herobanner {
+  height: calc(100vh - 45px);
+  max-height: 700px;
+
+  padding: 90px 60px 0;
+  background-color: $yellow;
+  overflow: hidden;
+
+  // Picture part
+  .HBPicture {
+    bottom: -10px;
+    left: 10px;
+    width: 48vw;
+  }
+
+  // Text Part
+  .textHB {
+    width: 35%;
+    height: 100%;
+    padding: 50px 0;
+
+    .hbTitle .line h3 {
+      display: inline-block;
+      padding: 10px;
+    }
+
+    .hbTitle .line {
+      &:nth-of-type(2) h3 {
+        background-color: $blue;
+        color: white;
+      }
+      &:nth-of-type(3) h3 {
+        background-color: white;
+      }
+      &:last-of-type h3 {
+        background-color: $red;
+        color: white;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 600;
+    }
+
+    p:first-of-type {
+      margin: 50px 0;
+    }
+
+    p:last-of-type {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  // Icon part
+  .startupIcon {
+    width: 15%;
+    height: 100%;
+    .iconContainer {
+      width: 120px;
+    }
+  }
+}
+
+// Media queries
+#Herobanner {
+  @media screen and (max-width: 992px) {
+    height: auto;
+    max-height: none;
+    .HBPicture {
+      width: 30vw;
+      margin-top: 10px;
+    }
+
+    .textHB {
+      width: 100%;
+
+      p {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .textHB {
+      p {
+        font-size: 0.9rem;
+      }
+      p:last-of-type {
+        font-size: 1rem;
+      }
+    }
+    .startupIcon .iconContainer {
+      width: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding: 0 100px;
+  }
+}

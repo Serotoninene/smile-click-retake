@@ -1,0 +1,60 @@
+#Footer {
+  padding: 80px;
+  background-color: $blue;
+
+  .column {
+    grid-column-start: span 3;
+
+    h4:nth-of-type(2) {
+      margin: 20px 0;
+    }
+  }
+
+  .logoContainer {
+    max-width: 150px;
+  }
+
+  h4 {
+    color: $yellow;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: white;
+    line-height: 1.5rem;
+  }
+
+  p:last-of-type {
+    margin-bottom: 50px;
+  }
+}
+
+// Media queries
+#Footer {
+  @media screen and (max-width: 772px) {
+    .column {
+      grid-column-start: span 6;
+    }
+
+    p:last-of-type {
+      margin-bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: 572px) {
+    .column {
+      grid-column-start: span 12;
+      text-align: center;
+    }
+
+    .logoContainer {
+      margin-bottom: 50px;
+    }
+
+    p:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// Components
+import Navbar from "./Components/Navbar";
+import Herobanner from "./Frames/Herobanner";
+import ClickandSmile from "./Frames/ClickandSmile";
+import Products from "./Frames/Products";
+import PartnersBanner from "./Frames/PartnersBanner";
+import Advantages from "./Frames/Advantages";
+import Questions from "./Frames/Questions";
+import Reviews from "./Frames/Reviews";
+import Aide from "./Frames/Aide";
+import Footer from "./Components/Footer";
+// Styling
+import "./Scss/style.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App relative">
+      <Herobanner />
+      <ClickandSmile />
+      <Products />
+      <PartnersBanner />
+      <Advantages />
+      <Questions />
+      {/* <Reviews /> */}
+      <Aide />
+      <Footer />
+      <Navbar />
     </div>
   );
 }

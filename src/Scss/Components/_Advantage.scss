@@ -1,0 +1,23 @@
+.Advantage {
+  grid-column-start: span 4;
+  padding: 0 10px;
+
+  h4 {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.9rem;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+// Media queries
+.Advantage {
+  @media screen and (max-width: 772px) {
+    grid-column-start: span 12;
+    margin-bottom: 50px;
+  }
+}

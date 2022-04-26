@@ -1,0 +1,71 @@
+#ClickandSmile {
+  padding: 60px 80px;
+
+  .text {
+    grid-column-start: span 6;
+
+    .title .subtitle {
+      width: 100%;
+      bottom: -42%;
+
+      p {
+        font-family: "Pacifico", cursive;
+        color: $yellow;
+        font-size: 44px;
+        letter-spacing: 0.67px;
+        transform: rotate(-6deg);
+      }
+    }
+
+    p {
+      text-align: center;
+      margin: 30px 20px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+  .illustrations {
+    grid-column-start: span 6;
+  }
+}
+
+// Media queries
+#ClickandSmile {
+  @media screen and (max-width: 992px) {
+    .text,
+    .illustrations {
+      grid-column-start: span 12;
+    }
+
+    .illustrations {
+      margin-top: 50px;
+
+      img {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .text {
+      .title h1 {
+        font-size: 2rem;
+      }
+
+      .title .subtitle {
+        bottom: -80%;
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding: 60px 100px;
+  }
+}

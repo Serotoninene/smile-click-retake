@@ -1,0 +1,33 @@
+#Reviews {
+  background-color: $yellow;
+  padding: 40px 0;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .reviewsContainer {
+    padding-left: calc(50% - 232px);
+    // overflow: hidden;
+  }
+  .carrousselBtns {
+    bottom: 15px;
+    left: calc(50vw + 150px);
+
+    .btn {
+      width: 50px;
+      height: 40px;
+      background-color: $red;
+      color: white;
+      cursor: pointer;
+    }
+
+    .rightBtn {
+      margin-left: 1px;
+    }
+
+    .disabled {
+      opacity: 0.7;
+    }
+  }
+}

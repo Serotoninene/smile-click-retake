@@ -1,0 +1,58 @@
+#Navbar {
+  background-color: $yellow;
+  width: 100%;
+  padding: 0 40px;
+  height: 90px;
+  top: 0;
+
+  li {
+    cursor: pointer;
+  }
+
+  .navLinks {
+    width: 50%;
+
+    li {
+      font-size: 14px;
+      font-weight: 700;
+      transition: color 0.2s ease-out;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 8px;
+      margin-left: 9px;
+    }
+  }
+
+  .identifiers {
+    .connecter {
+      margin-left: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0.5px;
+        width: 100%;
+        background-color: $blue;
+      }
+    }
+  }
+
+  .burger {
+    .burgerStage {
+      height: 2px;
+      width: 50px;
+      margin-bottom: 5px;
+      background-color: $blue;
+    }
+  }
+}

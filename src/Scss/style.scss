@@ -1,0 +1,25 @@
+// Setup
+@import "./Setup/fonts";
+@import "./Setup/variables";
+@import "./Setup/utils";
+@import "./Setup/base";
+@import "./Setup/app";
+// Pages
+
+// Frames
+@import "./Frames/Herobanner";
+@import "./Frames/ClickandSmile";
+@import "./Frames/Products";
+@import "./Frames/PartnersBanner";
+@import "./Frames/Advantages";
+@import "./Frames/Questions";
+@import "./Frames/Reviews";
+@import "./Frames/Aide";
+
+// Components
+@import "./Components/Navbar";
+@import "./Components/Button";
+@import "./Components/Product";
+@import "./Components/Advantage";
+@import "./Components/Review";
+@import "./Components/Footer";

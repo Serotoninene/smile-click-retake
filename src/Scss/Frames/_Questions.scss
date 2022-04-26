@@ -1,0 +1,72 @@
+#Questions {
+  margin: 0 125px 50px 125px;
+  .title {
+    margin-bottom: 75px;
+    .subtitle {
+      width: 100%;
+      margin-bottom: 500px;
+
+      p {
+        font-family: "Pacifico", cursive;
+        color: $yellow;
+        font-size: 44px;
+        letter-spacing: 0.67px;
+        transform: rotate(-6deg);
+      }
+    }
+  }
+
+  .question {
+    background-color: $red;
+    color: white;
+    width: 80%;
+    padding: 10px 0px 10px 10px;
+
+    .bulleQuestion {
+      width: 20px;
+      bottom: -20px;
+      left: 20px;
+    }
+  }
+
+  .answer {
+    > div {
+      padding: 50px 25px;
+      width: 80%;
+      background-color: $blue;
+      color: white;
+    }
+
+    .bulleReponse {
+      bottom: -20px;
+      right: 20px;
+      width: 20px;
+    }
+  }
+}
+
+// Media queries
+#Questions {
+  @media screen and (max-width: 992px) {
+    margin: 0 50px 50px 50px;
+  }
+
+  @media screen and (max-width: 772px) {
+    margin: 0 30px 50px 30px;
+  }
+  @media screen and (max-width: 576px) {
+    margin: 0 5px 50px 5px;
+    .title h1 {
+      font-size: 2rem;
+    }
+    .title .subtitle {
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding: 0 200px;
+  }
+}

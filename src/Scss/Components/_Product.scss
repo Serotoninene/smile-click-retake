@@ -1,0 +1,75 @@
+.Product {
+  grid-column-start: span 4;
+  background-color: $yellow;
+  width: 100%;
+  padding-top: 30px;
+  & > div {
+    margin-bottom: 45px;
+
+    p,
+    span {
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  h2:after {
+    content: "SMILE";
+    font-family: "Open Sans", sans-serif;
+    color: #828889;
+    position: absolute;
+    bottom: -20px;
+    right: -5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: right;
+    letter-spacing: 3.6px;
+  }
+
+  .productImg {
+    width: 50%;
+  }
+
+  .prices {
+    p {
+      font-size: 20px;
+
+      .HT {
+        font-size: 15px;
+      }
+    }
+
+    p:last-of-type {
+      font-size: 15px;
+      .oldPrice:after {
+        content: " ";
+        position: absolute;
+        left: -25%;
+        top: 50%;
+        height: 1.5px;
+        width: 150%;
+        background-color: white;
+        transform: rotate(-15deg);
+      }
+
+      .HT {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.Product:last-of-type {
+  p,
+  span {
+    color: $blue;
+  }
+}
+
+// Media Queries
+.Product {
+  @media screen and (max-width: 772px) {
+    grid-column-start: span 12;
+  }
+}

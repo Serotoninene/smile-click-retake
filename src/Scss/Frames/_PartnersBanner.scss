@@ -1,0 +1,37 @@
+#PartnersBanner {
+  margin: 0 80px;
+
+  h4 {
+    margin-bottom: 20px;
+    span {
+      font-size: 4rem;
+      font-weight: 800;
+    }
+  }
+
+  .button {
+    margin-bottom: 50px;
+  }
+
+  .partners {
+    width: 100%;
+    margin-bottom: 50px;
+    .partner {
+      width: 40px;
+    }
+  }
+}
+
+// Media queries
+#PartnersBanner {
+  @media screen and (max-width: 772px) {
+    .partners {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding: 0 100px;
+  }
+}

@@ -1,0 +1,46 @@
+.Review {
+  background-color: white;
+  width: 464px;
+  height: 325px;
+  padding: 10px 10px 20px 10px;
+  margin-right: 30px;
+
+  .customerReview {
+    background-color: $lightGrey;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      bottom: -5px;
+      left: 50px;
+      background-color: $lightGrey;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+    }
+  }
+
+  .customerId {
+    padding-left: 20px;
+    .customerPic {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+
+    p {
+      padding-left: 1px;
+    }
+  }
+}
